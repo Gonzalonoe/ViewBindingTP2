@@ -1,28 +1,28 @@
-package Modelo;
+package com.example.viewbindingtp2;
 
 public class Libro {
+    private String titulo;
     private String autor;
     private String editorial;
     private String descripcion;
-    private int anio;
     private int paginas;
-    private String etiqueta;
+    private int portada;
 
-    public Libro(int anio, String autor, String descripcion, String editorial, String etiqueta, int paginas) {
-        this.anio = anio;
+    public Libro(String titulo, String autor, String descripcion, String editorial, int paginas, int portada) {
+        this.titulo = titulo;
         this.autor = autor;
         this.descripcion = descripcion;
         this.editorial = editorial;
-        this.etiqueta = etiqueta;
         this.paginas = paginas;
+        this.portada = portada;
     }
 
-    public int getAnio() {
-        return anio;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setAnio(int anio) {
-        this.anio = anio;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getAutor() {
@@ -49,19 +49,19 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public String getEtiqueta() {
-        return etiqueta;
-    }
-
-    public void setEtiqueta(String etiqueta) {
-        this.etiqueta = etiqueta;
-    }
-
     public int getPaginas() {
         return paginas;
     }
 
     public void setPaginas(int paginas) {
         this.paginas = paginas;
+    }
+
+    public int getPortada() {
+        return portada;
+    }
+
+    public void setPortada(int portada) {
+        this.portada = portada;
     }
 }
