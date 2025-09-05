@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewBindingTP2</string>
+    <string name="todo">TODO</string>
 </resources>

@@ -13,15 +13,19 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
+        android:minHeight="48dp"
         android:text="Name"
         tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="192dp"
+        android:layout_height="81dp"
         android:text="Buscar"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="346dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

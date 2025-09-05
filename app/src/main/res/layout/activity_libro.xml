@@ -9,59 +9,77 @@
 
     <EditText
         android:id="@+id/edtTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="244dp"
+        android:layout_height="71dp"
         android:ems="10"
+        android:hint="TITULO"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtAutor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="244dp"
+        android:layout_height="68dp"
         android:ems="10"
+        android:hint="AUTOR"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="129dp" />
 
     <EditText
         android:id="@+id/edtEditorial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="242dp"
+        android:layout_height="69dp"
         android:ems="10"
+        android:hint="EDITORIAL"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="226dp" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="222dp" />
 
     <EditText
         android:id="@+id/edtDescripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="72dp"
         android:ems="10"
+        android:hint="DESCRIPCION"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="321dp" />
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="309dp" />
 
     <EditText
         android:id="@+id/edtPaginas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="75dp"
         android:ems="10"
+        android:hint="PAGINAS"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="409dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="402dp" />
 
     <ImageView
         android:id="@+id/Portada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="500dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="534dp"
         tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
