@@ -1,19 +1,21 @@
 package com.example.viewbindingtp2;
 
-public class Libro {
+import java.io.Serializable;
+
+public class Libro implements Serializable {
     private String titulo;
     private String autor;
     private String editorial;
-    private String descripcion;
     private int paginas;
+    private String categoria;
     private int portada;
 
-    public Libro(String titulo, String autor, String descripcion, String editorial, int paginas, int portada) {
+    public Libro(String titulo, String autor, String editorial, int paginas, String categoria, int portada) {
         this.titulo = titulo;
         this.autor = autor;
-        this.descripcion = descripcion;
         this.editorial = editorial;
         this.paginas = paginas;
+        this.categoria = categoria;
         this.portada = portada;
     }
 
@@ -33,13 +35,6 @@ public class Libro {
         this.autor = autor;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 
     public String getEditorial() {
         return editorial;
@@ -63,5 +58,13 @@ public class Libro {
 
     public void setPortada(int portada) {
         this.portada = portada;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }
